@@ -61,6 +61,14 @@ namespace Bau.Libraries.LibDataStructures.Collections
 		}
 
 		/// <summary>
+		///		Intenta obtener un valor si existe la clave
+		/// </summary>
+		public bool TryGetValue(string key, out TypeData value)
+		{
+			return InternalDictionary.TryGetValue(key, out value);
+		}
+
+		/// <summary>
 		///		Elimina un elemento
 		/// </summary>
 		public void Remove(string key)

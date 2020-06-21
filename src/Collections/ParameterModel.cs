@@ -24,7 +24,7 @@ namespace Bau.Libraries.LibDataStructures.Collections
 		public string GetValueString()
 		{
 			if (Value == null)
-				return " ";
+				return string.Empty;
 			else
 				return Value.ToString();
 		}
