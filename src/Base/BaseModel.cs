@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Bau.Libraries.LibDataStructures.Base
 {
@@ -13,7 +12,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// </summary>
 		public static bool IsNull(BaseModel value)
 		{ 
-			return value == null || value.ID == null;
+			return value == null || value.Id == null;
 		}
 
 		/// <summary>
@@ -41,7 +40,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// <summary>
 		///		ID del elemento
 		/// </summary>
-		public int? ID { get; set; }
+		public int? Id { get; set; }
 
 		/// <summary>
 		///		Identificador global
@@ -53,7 +52,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// </summary>
 		public bool IsEmpty
 		{ 
-			get { return ID == null; }
+			get { return Id is null; }
 		}
 	}
 }

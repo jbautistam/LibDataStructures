@@ -14,7 +14,7 @@ namespace Bau.Libraries.LibDataStructures.Tools.Comparers
 		/// </summary>
 		protected override int CompareData(Base.BaseModel first, Base.BaseModel second)
 		{
-			return (first.ID ?? 0).CompareTo(second.ID ?? 0);
+			return (first.Id ?? 0).CompareTo(second.Id ?? 0);
 		}
 	}
 }

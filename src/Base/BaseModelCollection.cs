@@ -15,7 +15,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// </summary>
 		public virtual TypeData Search(int? id)
 		{ 
-			return this.FirstOrDefault(item => item.ID == id);
+			return this.FirstOrDefault(item => item.Id == id);
 		}
 
 		/// <summary>
@@ -31,7 +31,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// </summary>
 		public TypeData Search(TypeData item)
 		{ 
-			return this.FirstOrDefault(data => data.ID == item.ID);
+			return this.FirstOrDefault(data => data.Id == item.Id);
 		}
 
 		/// <summary>
@@ -53,17 +53,17 @@ namespace Bau.Libraries.LibDataStructures.Base
 		/// <summary>
 		///		Elimina un elemento de la colección
 		/// </summary>
-		public void RemoveByID(int? id)
+		public void RemoveById(int? id)
 		{ 
 			for (int index = Count - 1; index >= 0; index--)
-				if (this[index].ID == id)
+				if (this[index].Id == id)
 					RemoveAt(index);
 		}
 
 		/// <summary>
 		///		Elimina un elemento por su ID
 		/// </summary>
-		public void RemoveByID(string id)
+		public void RemoveById(string id)
 		{
 			TypeData item = Search(id);
 

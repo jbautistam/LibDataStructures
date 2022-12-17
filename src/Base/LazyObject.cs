@@ -30,7 +30,7 @@ namespace Bau.Libraries.LibDataStructures.Base
 				if (IsAssigned)
 				{
 					if (Data is BaseModel data)
-						return data.ID;
+						return data.Id;
 					else
 						return null;
 				}
